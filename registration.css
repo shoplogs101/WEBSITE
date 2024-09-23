@@ -4,7 +4,7 @@ html{
 body{
     display:grid;
     grid-gap:0.25rem;
-    background-image:url(images/background.jpg);
+    background-image:url(Images/background.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:fixed;
