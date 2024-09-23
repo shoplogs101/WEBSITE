@@ -106,7 +106,7 @@ body h3{
 
     #featured_products {
         width: 100vw;
-        animation: scroll-animation 15s linear infinite; /* Slower animation for smaller screens */
+        animation: scroll-animation 25s linear infinite; /* Slower animation for smaller screens */
     }
 
     #featured_products .scroll {
