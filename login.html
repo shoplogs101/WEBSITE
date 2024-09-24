@@ -6,15 +6,17 @@
     <title>SHOPLOGS</title>
     <link rel="stylesheet" href="registration.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-client.js"></script>
 </head>
 <body>
-    <form>
-        <label>Email or Username</label><br>
-        <input type="text"><br>
-        <label>Password</label><br>
-        <input type="text"><br>
-        <button>Log In</button>
+    <form id="login-form">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" required><br>
+        <button type="submit">Log In</button>
         <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
     </form>
+    <div id="error-message" style="color: red;"></div>
 </body>
 </html>
