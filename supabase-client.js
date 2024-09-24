@@ -1,7 +1,15 @@
 // Initialize Supabase client
 const supabaseUrl = 'https://tdtcqcqdsavurdyappcw.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRkdGNxY3Fkc2F2dXJkeWFwcGN3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjcxOTU2ODAsImV4cCI6MjA0Mjc3MTY4MH0.a7ygsIPPozqU4Q5tMJDorUFt3XE4Hrw5KabHdIsp5VI';
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+const supabaseKey = 'your-supabase-key';
+const supabase = supabase.createClient(supabaseUrl, supabaseKey, {
+  auth: {
+    persistSession: true,
+    autoRefreshToken: true,
+  },
+});
+
+// Add this at the beginning of the file
+const baseUrl = window.location.pathname.replace(/\/[^/]*$/, '');
 
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
@@ -23,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (error) throw error;
                 
                 // Redirect to index.html on successful login
-                window.location.href = 'index.html';
+                window.location.href = `${baseUrl}/index.html`;
             } catch (error) {
                 errorMessage.textContent = error.message;
             }
@@ -51,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (error) throw error;
                 
                 // Redirect to login.html on successful signup
-                window.location.href = 'login.html';
+                window.location.href = `${baseUrl}/login.html`;
             } catch (error) {
                 errorMessage.textContent = error.message;
             }
