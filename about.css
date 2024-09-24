@@ -29,7 +29,7 @@ body{
     .body-container {
         height: 100vh;
         width:100vw;
-        overflow:none;
+        overflow:hidden;
         padding: 1rem;
     }
 
