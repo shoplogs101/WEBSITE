@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPLOGS</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="my_account.css">
+</head>
+<body>
+    <div class="body-container">
+        <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+        <label for="menu-toggle-checkbox" id="menu-toggle">☰</label>
+        <header>
+            <div id="header">
+                <h4 id="name" style="color:aquamarine"><b>SHOPLOGS</b></h4>
+                <a id="home" href="home_page.html">Home</a>
+                <div id="shop">
+                    <a id="shop-link">Shop</a>
+                    <div id="shop_content">
+                        <a class="shop_content">USA Bank Logs</a><br>
+                        <a class="shop_content">Cananda Bank Logs</a><br>
+                        <a class="shop_content">Cashapp & Paypal Logs</a><br>
+                        <a class="shop_content">Crypto Logs</a><br>
+                        <a class="shop_content">Dumps</a><br>
+                        <a class="shop_content">Others</a><br>
+                        <a class="shop_content">Spamming Tools</a><br>
+                        <a class="shop_content">Venmo</a><br>
+                        <a class="shop_content">Western Union</a><br>
+                        <a class="shop_content">Cheap Tools</a><br>
+                        <a class="shop_content">Clone Cards</a><br>
+                        <a class="shop_content">Credit-Debit Cards</a><br>
+                    </div>
+                </div>
+                <a id="about" href="About.html">About</a>
+                <a id="my_account" href="my_account.html">My Account</a>
+            </div>
+        </header>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const shopLink = document.getElementById('shop-link');
+                const shopContent = document.getElementById('shop_content');
+                
+                shopLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    shopContent.classList.toggle('show');
+                });
+            });
+        </script>
+        <div id="user_links">
+            <a>My Orders</a>
+            <a>My Balance</a>
+            <a>Top Up +</a>
+            <a>Logout</a>
+        </div>
+    </div>
+</body>
+</html>

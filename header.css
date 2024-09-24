@@ -1,0 +1,117 @@
+html {
+    font-size: 18px;
+}
+
+#header {
+    background-color: rgba(36, 34, 34, 0.95);
+    color: white;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    padding-left: 0.25rem;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#header a:hover {
+    color: blue;
+}
+
+#shop_content {
+    background-color: rgb(36, 34, 34);
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    padding: 0.25rem;
+}
+
+#shop_content.show {
+    display: block;
+}
+
+/* New styles for mobile header */
+#menu-toggle {
+    display: none;
+    position: fixed;
+    top: 0.125rem;
+    left: 0.125rem;
+    background-color: rgba(36, 34, 34, 0.95);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle-checkbox {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #header {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 75vh;
+        margin: 0;
+        padding: 1rem;
+        background-color: rgba(36, 34, 34, 1);
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+    #header > * {
+        margin-bottom: 1rem;
+    }
+
+    #name { grid-area: name; }
+    #home { grid-area: home; }
+    #shop { grid-area: shop; }
+    #about { grid-area: about; }
+    #my_account { grid-area: my_account; }
+
+    #header a {
+        display: block;
+        margin: 0.125rem;
+        padding: 0.125rem;
+    }
+
+    #shop_content {
+        background-color: rgb(36, 34, 34);
+        display: none;
+        position: static;
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        overflow-y: auto;
+        border-radius: 5px;
+        padding: 0.125rem;
+        margin-top: 0.5rem;
+    }
+
+    #shop_content.show {
+        display: block;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle-checkbox:checked + #menu-toggle + header #header {
+        display: block;
+    }
+
+    .menu-toggle-checkbox:checked + #menu-toggle {
+        position: fixed;
+    }
+}

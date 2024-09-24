@@ -1,0 +1,129 @@
+html{
+    font-size:18px;
+    color:honeydew;
+}
+
+body{
+    margin:0;
+}
+
+.body-container{
+    display:grid;
+    grid-template-rows:auto auto auto 16rem auto;
+    grid-row-gap:0.5rem;
+    background-image:url(images/background.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:fixed;
+    width:100vw;
+    overflow-x: hidden;
+}
+body h3{
+    background-color:rgba(0, 0, 0, 0.35);
+    border-radius:0.25rem;
+    padding:0.35rem;
+    margin:auto;
+    text-align:center;
+}
+#welcome{
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius:0.25rem;
+    padding:0.35rem;
+    width:100vw;
+}
+
+@keyframes scroll-animation{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+
+#featured_products{
+    white-space:nowrap;
+    animation:scroll-animation 15s linear infinite;
+    width:100vw;
+}
+#featured_products .image{
+    height:7.5rem;
+    width:10rem;
+    border-radius:0.5rem;
+}
+.scroll{
+    display:inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:0.25rem;
+    width:10rem;
+    height:15rem;
+    margin: 0.25em;;
+}
+.scroll a{
+    background-color:brown;
+    padding:0.25rem;
+    border-radius:0.25rem;
+}
+.scroll a:hover{
+    background-color:darkslategrey;
+    cursor: pointer;
+}
+.images{
+    height:7.5rem;
+    width:10rem;
+    border:1px solid;
+    border-radius:0.25rem;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.description{
+    padding:0.25rem;
+    text-align:center;
+}
+
+#last_message{
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius:0.25rem;
+    padding:0.35rem;
+    width:100vw;
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .body-container {
+        grid-template-rows: auto auto auto auto auto;
+        grid-row-gap: 1rem;
+    }
+
+    #welcome, #last_message {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    #featured_products {
+        width: 100vw;
+        animation: scroll-animation 15s linear infinite; /* Slower animation for smaller screens */
+    }
+
+    #featured_products .scroll {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    #featured_products .image {
+        height: 6rem;
+        width: 8rem;
+    }
+
+    body h3 {
+        font-size: 1.2rem;
+    }
+
+    .scroll a {
+        font-size: 0.8rem;
+    }
+}

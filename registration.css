@@ -1,0 +1,86 @@
+html{
+    font-size:18px;
+}
+body{
+    display:grid;
+    grid-gap:0.25rem;
+    background-image:url(images/background.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:fixed;
+    justify-content:center;
+    height:100vh;
+}
+form{
+    margin-top:2rem;
+    color:honeydew;
+    background-color:rgba(0, 0, 0, 0.75);
+    border:1px solid;
+    border-radius:0.25rem;
+    height:75vh;
+    width:60vw;
+    text-align:center;
+    align-content:center;
+}
+form label{
+    font-size:1.5rem
+}
+form input{
+    font-size:1.25rem;
+    padding:0.5rem;
+    margin:0.5rem 0;
+    border:1px solid #ccc;
+    border-radius:0.25rem;
+    background-color:rgba(255, 255, 255, 0.8);
+    width:80%;
+}
+form input:focus{
+    border-color:aquamarine;
+    outline:none;
+    background-color:rgba(255, 255, 255, 1);
+}
+form button{
+    font-size:1rem;
+    margin-top:0.25rem;
+    padding:0.25rem;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius:0.45rem;
+}
+form button:hover{
+    background-color:black;
+    font-size:1.05rem;
+}
+form a{
+    text-decoration:none;
+    color:rgba(0, 255, 255, 0.75);
+}
+form a:hover{
+    color:rgba(0, 255, 255, 1);
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    form {
+        width: 75vw;
+        height: 75vh;
+        padding: 1rem;
+    }
+
+    form label {
+        font-size: 1.2rem;
+    }
+
+    form input {
+        font-size: 1rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
