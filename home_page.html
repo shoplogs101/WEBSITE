@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPLOGS</title>
+    <link rel="stylesheet" href="home_page.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-client.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">Loading...</div>
+    <div id="content" class="hidden">
+        <div class="body-container">
+            <input type="checkbox" id="menu-toggle-checkbox" class="menu-toggle-checkbox">
+            <label for="menu-toggle-checkbox" id="menu-toggle">☰</label>
+            <header>
+                <div id="header">
+                    <h4 id="name" style="color:aquamarine"><b>SHOPLOGS</b></h4>
+                    <a id="home" href="index.html">Home</a>
+                    <div id="shop">
+                        <a id="shop-link">Shop</a>
+                        <div id="shop_content">
+                            <a class="shop_content">USA Bank Logs</a><br>
+                            <a class="shop_content">Cananda Bank Logs</a><br>
+                            <a class="shop_content">Cashapp & Paypal Logs</a><br>
+                            <a class="shop_content">Crypto Logs</a><br>
+                            <a class="shop_content">Dumps</a><br>
+                            <a class="shop_content">Others</a><br>
+                            <a class="shop_content">Spamming Tools</a><br>
+                            <a class="shop_content">Venmo</a><br>
+                            <a class="shop_content">Western Union</a><br>
+                            <a class="shop_content">Cheap Tools</a><br>
+                            <a class="shop_content">Clone Cards</a><br>
+                            <a class="shop_content">Credit-Debit Cards</a><br>
+                        </div>
+                    </div>
+                    <a id="about" href="about.html">About</a>
+                    <a id="my_account" href="#">Log out</a>
+                </div>
+            </header>
+            
+            <div id="welcome">
+                <h3 style="background-color:rgba(0, 0, 0, 0)">Welcome User,</h3>
+                <p>
+                    Thank you for signing up to keep in touch with Shoplogs From now on, you'll get regular updates on new shop tools.
+                    And since you'll be first to know, you can always shop the best tools with juicy prices (in addition to free cashout walkthrough by admins/vendors)
+                    In the meantime, navigate our stores and get a jump on your next getaway. Here's to the start of a healthy digital relationship and mentorship.
+                </p>
+            </div>
+            <h3 style="text-align:center">Featured Products</h3>
+            <div id="featured_products">
+                <div class="scroll">
+                    <div>
+                        <image src="Images/cashapp.jpg" alt="cashapp" class="image"></image>
+                    </div>
+                    <div style="text-align:center">
+                        <p>Cashapp</p>
+                        <p>Price</p>
+                        <a>View Product</a>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div>
+                        <image src="Images/chase.jpg" alt="chase" class="image"></image>
+                    </div>
+                    <div style="text-align:center">
+                        <p>Chase</p>
+                        <p>Price</p>
+                        <a>View Product</a>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div>
+                        <image src="Images/paypal.jpg" alt="paypal" class="image"></image>
+                    </div>
+                    <div style="text-align:center">
+                        <p>Paypal</p>
+                        <p>Price</p>
+                        <a>View Product</a>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div>
+                        <image src="Images/western_union.jpg" alt="western_union" class="image"></image>
+                    </div>
+                    <div style="text-align:center">
+                        <p>Western Union</p>
+                        <p>Price</p>
+                        <a>View Product</a>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div>
+                        <image src="Images/venmo.jpg" alt="venmo" class="image"></image>
+                    </div>
+                    <div style="text-align:center">
+                        <p>Venmo</p>
+                        <p>Price</p>
+                        <a>View Product</a>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div>
+                        <image src="Images/credit_cards.jpg" alt="credit_cards" class="image"></image>
+                    </div>
+                    <div style="text-align:center">
+                        <p>Credit Cards</p>
+                        <p>Price</p>
+                        <a>View Product</a>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div>
+                        <image src="Images/us_banks.jpg" alt="us_bank_logs" class="image"></image>
+                    </div>
+                    <div style="text-align:center">
+                        <p>US Bank Logs</p>
+                        <p>Price</p>
+                        <a>View Product</a>
+                    </div>
+                </div>
+            </div>
+            <div id="last_message">
+                <p>
+                    Team Shoplogs is proud to have you in the squad.
+                    We are here to make things easy as possible for you. This starts with our top quality products.
+                    When we have good news like new products launching or exclussive promotions, we'll leave you let you alone get down to business with our products.
+                    Our tools are guaranteed and live! We check our log daily before uploading it! So buying from us is safe and secure. Incase of dead tool, we got you covered! We are not responsible for any illegal activities.
+                    We adhere to the position "Customer is always Right" if the actions or requirements of the customer do not contradict the rules of our store.
+                    We try to resolve any problems that arise with our customers as quickly as possible.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
